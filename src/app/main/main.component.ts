@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  images = [ 'a','b','c','d','e',
+            'a','b','c','d','e',
+            'a','b','c','d','e',
+            'a','b','c','d','e',
+            'a','b','c','d','e'
+          ]
   constructor() { }
 
   ngOnInit() {
