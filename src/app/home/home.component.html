@@ -1,0 +1,8 @@
+<mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let image of images">
+      <div fxLayout="column" fxLayoutAlign=" none">
+        <img src="{{image.src}}" style="width: 100px; height: 100px;">
+        <h2>{{image.name}}</h2>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
