@@ -10,6 +10,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 import { MatGridListModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MainComponent,
     MarbelComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BlogComponent,
+    HomeComponent,
+    ServicesComponent
   ],
   imports: [BrowserModule, MatGridListModule, FlexLayoutModule],
   providers: [],

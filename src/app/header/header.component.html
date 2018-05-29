@@ -1,8 +1,8 @@
-<div fxLayout="row" fxLayoutAlign="space-around center" class="r">
-  <div fxFlex="50">Art&Stones</div>
-  <div fxFlex>
+<div fxLayout="row" fxLayoutAlign="space-around center" class="headerClass">
+  <div>Art&Stones</div>
+  <div fxFlex=50>
     <div fxLayout="row" fxLayoutAlign="space-around center">
-      <span fxFlex="20" *ngFor="feature of features">{{feature}}</span>
+      <span fxFlex="20" *ngFor="let feature of features">{{feature}}</span>
     </div>
   </div>
 </div>
