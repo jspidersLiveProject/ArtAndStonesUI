@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     { 'src': 'assets/images/marbel3.jpg', 'name': 'marbel3' },
     { 'src': 'assets/images/marbel4.jpg', 'name': 'marbel4' }
   ]
+  variable = 'marbel1';
   constructor() { }
 
   ngOnInit() {
