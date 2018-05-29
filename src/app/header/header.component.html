@@ -1,3 +1,8 @@
-<p>
-  header works!
-</p>
+<div fxLayout="row" fxLayoutAlign="space-around center" class="headerClass">
+  <div>Art&Stones</div>
+  <div fxFlex=50>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <span fxFlex="20" *ngFor="let feature of features">{{feature}}</span>
+    </div>
+  </div>
+</div>
