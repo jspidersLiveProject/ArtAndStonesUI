@@ -1,8 +1,14 @@
-<mat-grid-list cols="4">
-    <mat-grid-tile *ngFor="let image of images">
-      <div fxLayout="column" fxLayoutAlign=" none">
-        <img src="{{image.src}}" style="width: 100px; height: 100px;">
-        <h2>{{image.name}}</h2>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
+<mat-grid-list cols="4" *ngIf="gridEnabled">
+  <mat-grid-tile *ngFor="let image of images">
+    <div fxLayout="column" fxLayoutAlign=" none">
+      <img src="{{image.src}}" (click)="imageClicked(image)">
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+<div *ngIf="!gridEnabled">
+  <button mat-button color="primary" (click)="backClicked()">Back</button>
+  <img src="{{marbelSrc}}">
+  <h1> {{marbelName}} </h1>
+</div>
