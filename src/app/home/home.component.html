@@ -1,7 +1,11 @@
 <mat-grid-list cols="4" *ngIf="gridEnabled">
   <mat-grid-tile *ngFor="let image of images">
-    <div fxLayout="column" fxLayoutAlign=" none">
-      <img src="{{image.src}}" (click)="imageClicked(image)">
+    <div fxLayout="column" fxLayoutAlign=" none" (mouseenter) ="mouseEnter(image)"  (mouseleave) ="mouseLeave()" *ngIf="!hoverOver(image)">
+      <img src="{{image.src}}">
+    </div>
+    <div *ngIf="hoverOver(image)" class="hoverOver" (click)="imageClicked(image)">
+        <img src="{{image.src}}">
+        <div style="z-index: 9999;">{{marbelName}}</div>>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
