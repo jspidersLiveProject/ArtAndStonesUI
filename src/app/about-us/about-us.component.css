@@ -1,5 +1,26 @@
 .aboutUsCls{
-background-color: rgb(174, 203, 247);
-color: rgb(9, 8, 65);
-height: 100%;
+    background-image:url("./../../assets/images/marbi1.jpg");
+    background-color: rgb(88, 146, 233);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 650px;
+    width:1350px;
+  
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(9, 8, 65);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+p{
+    font-family: cursive;
+    color:rgb(68, 145, 23);
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: justify;
+    
 }

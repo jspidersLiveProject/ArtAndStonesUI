@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  imageMarbles = { src: 'assets/images/glassMarbles.jpg' };
-
   constructor() { }
 
   ngOnInit() {
