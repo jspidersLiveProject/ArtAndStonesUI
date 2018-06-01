@@ -20,9 +20,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
-
-
-
+import { FlowersComponent } from './flowers/flowers.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +33,21 @@ import { ServicesComponent } from './services/services.component';
     BlogComponent,
     HomeComponent,
     ServicesComponent,
+    FlowersComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, MatInputModule, MatGridListModule, FlexLayoutModule, AppRoutingModule, MatButtonModule, MatFormFieldModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatGridListModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatFormFieldModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
