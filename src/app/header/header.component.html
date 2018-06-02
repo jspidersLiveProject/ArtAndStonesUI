@@ -2,7 +2,7 @@
   <div (click)="buttonClicked('Home')" style="cursor : pointer">Art&Stones</div>
   <div fxFlex=50>
     <div fxLayout="row" fxLayoutAlign="space-around center">
-    <button mat-button color= "primary" *ngFor="let feature of features" (click)="buttonClicked(feature)">{{feature}}</button>
+      <button mat-button color="primary" *ngFor="let feature of features" (click)="buttonClicked(feature)">{{feature}}</button>
     </div>
   </div>
 </div>

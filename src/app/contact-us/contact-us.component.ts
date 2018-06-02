@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactUsComponent implements OnInit {
 
   constructor() { }
-  contactusImage= {src: 'assets/images/JspidersLogo.jpg', name: 'contactusLogo'}
+  contactusImage = { src: 'assets/images/JspidersLogo.jpg', name: 'contactusLogo' }
   ngOnInit() {
   }
 

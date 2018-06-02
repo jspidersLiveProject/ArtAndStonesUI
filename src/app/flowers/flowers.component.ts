@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FlowersComponent implements OnInit {
   @Input() example;
 
-  name  : string;
+  name: string;
   constructor() {
     console.log(this.example);
   }
