@@ -1,3 +1,4 @@
-<input type="text" placeholder="Enter Something" [ngModel]="userName" (ngModelChange)="userName = $event">
-
-<p> Hello {{userName}}</p>
+<mat-form-field>
+  <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+</mat-form-field>
