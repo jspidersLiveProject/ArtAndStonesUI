@@ -10,6 +10,7 @@ import { MatGridListModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,9 +21,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
-
-
-
+import { FlowersComponent } from './flowers/flowers.component';
+import { DataService } from './service/data/data.service';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { GetMarbelDetailsService } from './get-marbel-details.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,9 +39,25 @@ import { ServicesComponent } from './services/services.component';
     BlogComponent,
     HomeComponent,
     ServicesComponent,
+    FlowersComponent,
+    ParentComponent,
+    ChildComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, MatInputModule, MatGridListModule, FlexLayoutModule, AppRoutingModule, MatButtonModule, MatFormFieldModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatGridListModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    HttpClientModule
+  ],
+  providers: [DataService, GetMarbelDetailsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

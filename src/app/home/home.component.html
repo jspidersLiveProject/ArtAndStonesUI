@@ -1,5 +1,5 @@
 <mat-grid-list cols="4" *ngIf="gridEnabled" fxLayout="row" fxLayoutAlign="start start">
-  <mat-grid-tile *ngFor="let image of images" style="width: 25%; height: 25%;">
+  <mat-grid-tile *ngFor="let image of images" style="width: 25%; height: 25%;" (click)="imageClicked(image)">
     <div (mouseenter)="mouseEnter(image)" (mouseleave)="mouseLeave()" class="container">
       <img src="{{image.src}}" style="width:100%;height: 100%;">
       <div class="content" *ngIf="hoverOver(image)">
@@ -13,7 +13,10 @@
 
 
 <div *ngIf="!gridEnabled">
-  <button mat-button color="primary" (click)="backClicked()">Back</button>
-  <img src="{{marbelSrc}}">
-  <h1> {{marbelName}} </h1>
+  <button mat-button color="primary" (click)="backClicked()">Back</button> <br>
+  <img src="{{marbelSrc}}"><br>
+  <h1> {{marbelName}} </h1><br>
+  <h1> {{type}} </h1><br>
+  <h1> {{price}} </h1><br>
+  <h1> {{desc}} </h1><br>
 </div>

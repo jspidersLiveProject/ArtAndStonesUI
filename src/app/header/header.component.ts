@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  buttonClicked(feature){
+  buttonClicked(feature) {
     const tab: string = '/' + feature;
-    this.router.navigate([tab], {skipLocationChange: true });
+    this.router.navigate([tab], { skipLocationChange: true });
   }
 }
